@@ -1,0 +1,71 @@
+/* Start Global Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.sckshn {
+    display: flex;
+    justify-content: center;
+    transform: translate(-200px, -50px);
+}
+
+.Qr-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    text-align: center;
+    width: 280px;
+    height: 450px;
+    margin: 180px 0 0 400px;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    transition: 1s;
+}
+
+.Qr-code:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+@media (max-width: 375px) {
+    .Qr-code {
+        min-width: 280px;
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Qr-code {
+        min-width: 280px;
+        min-height: 450px;
+    }
+}
+.Qr-code img {
+    width: 255px;
+    border-radius: 7px;
+}
+
+.Qr-code h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    padding: 20px 20px 10px;
+}
+
+.Qr-code p {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(212, 46%, 89%);
+    padding: 5px 20px 20px;
+}
